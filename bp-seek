@@ -1,0 +1,10 @@
+#!/bin/sh
+
+# This script let's you seek in your playlist
+# Arguments are "next" and "prev"
+
+# sxhkd example:
+# XF86Audio{Next,Prev}
+# 	bp-seek {next,prev}
+
+echo "{ \"command\": [\"playlist-$1\"] }" | socat - '/tmp/mpv-socket'

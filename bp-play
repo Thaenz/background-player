@@ -1,0 +1,13 @@
+#!/bin/sh
+
+# This script displays shuffled output of $XDG_MUSIC_DIR in dmenu
+# You could also type "*" to play all the songs
+# If you want them to be played shuffled type "* --shuffle"
+
+# sxhkd example:
+# XF86Tools
+# 	bp-play
+
+selection=$(find "$XDG_MUSIC_DIR" -name "*.mp3" -exec basename {} \; | shuf - | dmenu -i -l 20)
+
+echo "{ \"command\": [\"loadfile\", \"$XDG_MUSIC_DIR/$selection\", \"append-play\" ] }" | socat - '/tmp/mpv-socket'

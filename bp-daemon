@@ -1,0 +1,9 @@
+#!/bin/sh
+
+# This script starts mpv idly in the background
+
+# .xinitrc example:
+# type "bp-daemon" &> /dev/null && \
+# 	bp-daemon &
+
+mpv --idle --no-video --input-ipc-server=/tmp/mpv-socket --no-terminal

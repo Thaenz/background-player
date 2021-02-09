@@ -1,6 +1,18 @@
-# Background Player
+Background Player
+=================
 
-This is a simple audio player
+This is a simple tool-set of shell scripts for controlling music playing in the background
+
+It looks in your $XDG_MUSIC_DIR variable so make sure to set it!
+
+Check the individual files for help
 
 Dependencies:
+-------------
 mpv
+dmenu
+-------------
+
+TODO:
+-----
+Add a pause functionality
