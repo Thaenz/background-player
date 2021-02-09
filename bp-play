@@ -2,7 +2,6 @@
 
 # This script displays shuffled output of $XDG_MUSIC_DIR in dmenu
 # You could also type "*" to play all the songs
-# If you want them to be played shuffled type "* --shuffle"
 
 # sxhkd example:
 # XF86Tools

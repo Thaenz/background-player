@@ -5,7 +5,7 @@ This is a simple tool-set of shell scripts for controlling music playing in the 
 
 It looks in your $XDG_MUSIC_DIR variable so make sure to set it!
 
-Check the individual files for help
+Check the individual files for more help
 
 Dependencies:
 -------------
