@@ -3,5 +3,4 @@
 This is a simple audio player
 
 Dependencies:
-bash
 mpv
