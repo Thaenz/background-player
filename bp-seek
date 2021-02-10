@@ -7,4 +7,4 @@
 # XF86Audio{Next,Prev}
 # 	bp-seek {next,prev}
 
-echo "{ \"command\": [\"playlist-$1\"] }" | socat - '/tmp/mpv-socket'
+echo "playlist-$1" | socat - '/tmp/mpv-socket'
