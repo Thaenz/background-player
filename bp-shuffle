@@ -1,0 +1,10 @@
+#!/bin/sh
+
+# This script shuffles your playlist
+
+# sxhkd example:
+# There's no shuffle button so I use what I got
+# XF86AudioStop
+# 	bp-shuffle
+
+echo 'playlist-shuffle' | socat - '/tmp/mpv-socket'

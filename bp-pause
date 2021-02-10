@@ -1,0 +1,10 @@
+#!/bin/sh
+
+# This script toggles pause 
+
+# sxhkd example:
+# XF86AudioPlay
+# 	bp-pause
+
+# echo "{ \"command\": [\"cycle\", \"pause\"] }" | socat - '/tmp/mpv-socket'
+echo 'cycle pause' | socat - '/tmp/mpv-socket'
