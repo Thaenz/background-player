@@ -1,0 +1,9 @@
+#!/bin/sh
+
+# This script clears the playlist
+
+# Example:
+# Just open dmenu_run and run the script
+
+echo "playlist-clear" | socat - '/tmp/mpv-socket'
+
