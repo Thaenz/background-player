@@ -11,6 +11,9 @@ Dependencies:
 -------------
 mpv
 dmenu
+dmenu patches:
+  - https://tools.suckless.org/dmenu/patches/center/
+  - https://tools.suckless.org/dmenu/patches/border/
 -------------
 
 TODO:
