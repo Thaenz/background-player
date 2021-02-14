@@ -7,6 +7,7 @@
 # XF86Tools
 # 	bp-play
 
-selection=$(find "$XDG_MUSIC_DIR" -name "*.mp3" -exec basename {} \; | shuf - | dmenu -i -l 20)
+selection=$(mpc ls | shuf - | \
+	dmenu -bw 1 -c -i -l 20 -sb '#6F6864' -nb '#282828' -nf '#F4B92F' -sf '#F4B92F')
 
-[ -n "$selection" ] && echo "loadfile \"$XDG_MUSIC_DIR/$selection\" append-play" | socat - '/tmp/mpv-socket'
+[ -n "$selection" ] && mpc add "$selection"

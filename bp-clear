@@ -5,5 +5,4 @@
 # Example:
 # Just open dmenu_run and run the script
 
-echo "playlist-clear" | socat - '/tmp/mpv-socket'
-
+mpc clear

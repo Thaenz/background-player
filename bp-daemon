@@ -6,4 +6,4 @@
 # type "bp-daemon" &> /dev/null && \
 # 	bp-daemon &
 
-mpv --idle --no-video --input-ipc-server=/tmp/mpv-socket --really-quiet
+mpd 

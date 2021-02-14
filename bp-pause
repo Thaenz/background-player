@@ -6,4 +6,4 @@
 # XF86AudioPlay
 # 	bp-pause
 
-echo 'cycle pause' | socat - '/tmp/mpv-socket'
+mpc toggle

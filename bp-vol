@@ -7,9 +7,5 @@
 # XF86Audio{RaiseVolume,LowerVolume,Mute}
 # 	bp-vol {+5,-5,mute}
 
-if [ "$1" = 'mute' ];
-then
-	echo 'cycle mute' | socat - '/tmp/mpv-socket'
-else
-	echo "add volume $1" | socat - '/tmp/mpv-socket'
-fi
+
+mpc volume "$1"

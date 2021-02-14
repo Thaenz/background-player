@@ -7,4 +7,4 @@
 # XF86AudioStop
 # 	bp-shuffle
 
-echo 'playlist-shuffle' | socat - '/tmp/mpv-socket'
+mpc shuffle
